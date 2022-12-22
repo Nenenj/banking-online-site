@@ -26,8 +26,8 @@
                     <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
                     <li class="nav-item"><a class="nav-link" href="./commercialbanking.html"><span class="fa fa-info fa-lg"></span>Commercial Banking</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span>Online Banking</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./transactions.html"><span class="fa fa-info fa-lg"></span>Transactions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./onlinebanking.html"><span class="fa fa-info fa-lg"></span>Online Banking</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span>Transactions</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                     
                 </ul>
@@ -114,63 +114,40 @@
                 </button>
             </div>
             </div>
+            <div>
 
-                
-                
-                   
-                
-                                    
+            <button onclick="document.getElementById('idol').style.display='block'" class="btn btn-primary btn-lg">Login to view transactions</button>
 
-                        
+                    <div id="idol" class="modal">
+                        <span onclick="document.getElementById('idol').style.display='none'" class="close" title="Close Modal">
+                            &times;</span>
 
-      
-     
-                       
-           
-           
-        
-                   
-            
+                           
+                                <form name="myForm" class="modal-content animate" method="post">
+                                    <div class="container">
+                                    <label><b>Username</b></label><br><br>
+                                    <input type="text" name="uname"  placeholder="Enter your Firstname" required>
+                                    <label><b>Password</b></label>
+                                    <input type="password" name="pass"  placeholder="Password" required><br><br>
+                                    <div class="container" style="background-color:darkgray">
+                                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            
+                                    <input type="button" name="log" value="Login" onClick="myFunction()" class="btn btn-primary btn-sm ml-1">
+                                
+                                </div>
+                                </div>
                     
-        
-                <div class="media">
-                    <h3>Online Banking</h3><br><br>
-                    <img class="d-flex mr-3 img-thumbnail align-self-center"
-                    src="img/atm2.jpg" alt="Atm2" style="width: 700px">
-                    
-                    <p class="d-none d-sm-block">Our modern web and mobile
-                        applications allow you to keep<br>
-                        track of your finances where ever
-                        you are in the world.<br>
-                    See exactly where your money<br>
-                        goes every month.<br>
-                        Recieve notifications when you're close to<br>
-                        hitting your limits.</p>
-            
-        </div>
-     
-
-      
-
-        <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 col-md-3">
+                    </form>
                 
-            </div>
-            
-            <img class="d-flex ml-3 img-thumbnail align-self-center"
-                    src="img/call.jpg" alt="">
-            
-        </div>
+                    
+                    </div>
+                </div>
+                
+                
 
-        
-               
-      
-      
-        
-             
-        
-   
 
+    
+            
     <footer class="footer">
         <div class="container">
             <div class="row">             
